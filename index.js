@@ -153,7 +153,9 @@ app.post(
   }
 );
 
-
+app.get('/', (req, res) => {
+  res.redirect('/listing');
+});
 
 // EDIT
 app.get("/listing/edit/:id", async (req, res) => {
