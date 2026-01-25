@@ -19,7 +19,7 @@ const multer  = require('multer');
 const {storage}=require("./cloudconfig.js");
 const upload = multer({storage});
 const MongoStore = require('connect-mongo').default
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 
 /* =========================
    MODELS
@@ -154,7 +154,7 @@ app.post(
 );
 
 app.get('/', (req, res) => {
-  res.redirect('/listing');
+  res.send('App is running on Render!');
 });
 
 // EDIT
