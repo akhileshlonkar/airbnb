@@ -19,6 +19,7 @@ const multer  = require('multer');
 const {storage}=require("./cloudconfig.js");
 const upload = multer({storage});
 const MongoStore = require('connect-mongo').default
+const PORT = process.env.PORT || 3000;
 
 /* =========================
    MODELS
@@ -267,6 +268,6 @@ app.get("/demo", async (req, res) => {
 /* =========================
    SERVER
 ========================= */
-app.listen(2606, () => {
-  console.log("Server running on port 2606");
-});
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+})
