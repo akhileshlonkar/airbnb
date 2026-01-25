@@ -107,6 +107,7 @@ const isLoggedIn = (req, res, next) => {
 // INDEX
 app.get("/listing" , async (req, res) => {
   const list = await Listing.find();
+
   res.render("index.ejs", { list });
 });
 
@@ -126,32 +127,23 @@ app.get("/listing/new", (req, res) => {
 });
 
 // CREATE
-app.post(
-  "/listing",
-  isLoggedIn,
-  upload.single("listing[image]"),
-  async (req, res) => {
+app.post("/listing", isLoggedIn, async (req, res) => {
+  const { title, description, price, location, country, image } = req.body;
 
-    const { title, description, price, location, country } = req.body;
+  const newListing = new Listing({
+    title,
+    description,
+    price,
+    location,
+    country,
+    image, // ✅ URL string from form
+  });
 
-    const newListing = new Listing({
-      title,
-      description,
-      price,
-      location,
-      country,
-      image: {
-        url: req.file.path,       // Cloudinary URL
-        filename: req.file.filename, // Cloudinary public_id
-      },
-    });
+  newListing.owner = req.user._id;
+  await newListing.save();
 
-    newListing.owner = req.user._id;
-    await newListing.save();
-
-    res.send( req.file);
-  }
-);
+  res.redirect("/listing");
+});
 
 app.get('/', (req, res) => {
   res.send('App is running on Render!');
