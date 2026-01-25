@@ -1,0 +1,26 @@
+<% layout('boilerplate.ejs')-%>
+<body>
+    <div class="form-wrapper">
+    <div class="form-container">
+        <h2>Create a New User</h2>
+
+        <form action="/signup" method="POST">
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" name="username" placeholder="Add a Username" id="username" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" name="email" placeholder="Add a email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Add a password" id="password" required>
+            </div>
+            <button class="submit-btn" type="submit">Add</button>
+        </form>
+    </div>
+</div>
+</body>

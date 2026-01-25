@@ -1,0 +1,22 @@
+<% layout('boilerplate.ejs') %>
+<body>
+  
+    <div class="row">
+        <%for(a of list){%>
+        <div class="card" style="width: 18rem;">
+        <img src="<%=a.image%>" class="card-img-top" alt="">
+        <div class="card-body">
+            <h5 class="card-title"><b><%=a.title%></b></h5>
+            <h6 class="card-price">Price: &#x20B9;<%=a.price%>/night</h6>
+            <p class="card-text"><%=a.description%></p>
+            <a href="/listing/show/<%=a._id%>" class="btn btn-primary">Go Deep</a>
+            </div>
+        </div>
+        <%}%>  
+    </div> 
+    <!--<%for(a of list){%>
+    <a href="/listing/show/<%=a._id%>"><h6><%=a.title%></h6></a>
+    <%}%>
+    <a href="/listing/new"><button>Create new</button></a>-->
+</body>
+

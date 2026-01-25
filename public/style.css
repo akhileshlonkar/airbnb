@@ -1,0 +1,368 @@
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+.navbar-collapse{
+    background-color: #ffffff;
+}
+.fa-solid{
+    color: rgb(247, 94, 94);
+    font-size: 2rem;
+}
+.nav-link{
+    color: rgb(0, 0, 0) !important;
+}
+.simple-footer {
+    background: #e8e8e8;
+    text-align: center;
+    padding: 40px 0 25px;
+    font-family: sans-serif;
+}
+
+.footer-icons {
+    margin-bottom: 12px;
+}
+
+.footer-icons a {
+    color: #111;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-icons a:hover {
+    opacity: 0.7;
+}
+
+.footer-company {
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.footer-links {
+    font-size: 14px;
+    color: #444;
+}
+
+.footer-links a {
+    color: #444;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.card{
+    border: #111;
+    border-radius: 2rem;
+    border: 3px;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+    /* VERY IMPORTANT: transition must be here */
+    transition: 
+        transform 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+.cards-review {
+    background: #bdbdbd;
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.cards-review:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+.reviews-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem 0;   /* remove horizontal centering */
+}
+img {
+    margin: auto;
+    margin-top: 12px;
+    width: 100%;
+    height: 220px;       /* fixed height */
+    object-fit: cover;   /* crop nicely without stretching */
+    border-radius: 10px; 
+    transition: transform 1s ease-in;
+    /* optional */
+}
+
+/*new*/
+
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.form-container {
+    width: 60%;
+    max-width: 900px;
+    background: #fff;
+    padding: 25px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+label {
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input, textarea {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.half {
+    width: 100%;
+}
+
+.submit-btn {
+    padding: 12px 20px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.submit-btn:hover {
+    opacity: 0.85;
+}
+/*show*/
+/* Main container */
+.details-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.08);
+    flex-wrap: wrap;
+}
+
+/* ---------- Image Section ---------- */
+.image-box {
+    flex: 1 1 400px;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    object-fit: cover;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+/* ---------- Info Section ---------- */
+.info-box {
+    flex: 1 1 350px;
+    padding: 10px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Details Grid */
+.info-grid {
+    background: #f8f8f8;
+    padding: 15px 20px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+/* ---------- Buttons ---------- */
+.button-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.15);
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: 0px 5px 12px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+}
+
+.edit {
+    background: #0072f5;
+}
+
+.delete {
+    background: #e63946;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Tablet */
+@media (max-width: 850px) {
+    .details-container {
+        padding: 20px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .details-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .image-box img {
+        max-height: 350px;
+        object-fit: cover;
+    }
+
+    .button-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* edit */
+.edit-container {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+}
+
+.form-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.listing-form .form-group {
+    margin-bottom: 20px;
+}
+
+.listing-form label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.listing-form input,
+.listing-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.listing-form input:focus,
+.listing-form textarea:focus {
+    border-color: #ff385c;
+    box-shadow: 0 0 0 2px rgba(255, 56, 92, 0.3);
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.half {
+    flex: 1;
+}
+
+.btn-submit {
+    display: inline-block;
+    background-color: #ff385c;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #e11d48;
+}
