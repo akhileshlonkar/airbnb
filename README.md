@@ -1,4 +1,4 @@
-# Airbnb (clone)
+# Airbnb 
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) [![Node.js CI](https://img.shields.io/badge/node-%3E%3D14-brightgreen)](https://nodejs.org/)
 
