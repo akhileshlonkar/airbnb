@@ -43,18 +43,31 @@ CRUD operations, server-side rendering, and cloud database integration.
 ## Project Structure
 
 ├── init/              # Initial setup / seed data
+
 ├── models/            # Mongoose schemas
+
 ├── public/            # Static assets (CSS, JS, images)
+
 ├── uploads/           # Uploaded images/files
+
 ├── views/             # EJS templates
+
 ├── node_modules/      # Dependencies
+
 ├── .env               # Environment variables
+
 ├── .gitignore         # Git ignored files
+
 ├── cloudconfig.js     # Cloudinary / image config
+
 ├── index.js           # Main server entry point
+
 ├── package.json       # Project metadata & scripts
+
 ├── package-lock.json  # Dependency lock file
+
 └── README.md          # Project documentation
+
 
 ---
 
